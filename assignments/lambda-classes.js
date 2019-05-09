@@ -89,6 +89,10 @@ class Instructor extends Person {
     grade(student, subject) {
         console.log(`${student.name} receives a perfect score on ${subject}`);
     }
+    // calcGrade(num) {
+    //     const plusMinus = 
+    //     return Math.floor(Math.random() * 101);
+    // }
 }
 
 //   #### Student
@@ -110,6 +114,7 @@ class Student extends Person {
         this.previousBackground = studentAttributes.previousBackground;
         this.className = studentAttributes.className;
         this.favSubjects = studentAttributes.favSubjects;
+        this.grade = studentAttributes.grade;
     }
     listsSubjects() {
         console.log(`${this.favSubjects}`);
@@ -162,7 +167,8 @@ class ProjectManagers extends Instructor {
     age: 22,
     previousBackground: 'Nurse',
     className: 'WEB20',
-    favSubjects: ['Front-end', 'HTML', 'CSS', 'Flexbox Froggy']
+    favSubjects: ['Front-end', 'HTML', 'CSS', 'Flexbox Froggy'],
+    grade: 77
   });
 
   const biebs = new ProjectManagers({
@@ -184,6 +190,7 @@ class ProjectManagers extends Instructor {
   margaret.sprintChallenge('JavaScript');
   biebs.standUP('web20_jay');
   biebs.debugsCode(margaret, 'Advanced CSS');
+  
 
 
 
